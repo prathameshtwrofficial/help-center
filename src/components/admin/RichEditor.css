@@ -1,0 +1,311 @@
+/* React Quill Editor Styling */
+.ql-editor {
+  min-height: 250px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ql-editor h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 1rem 0;
+}
+
+.ql-editor h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0.875rem 0;
+}
+
+.ql-editor h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0.75rem 0;
+}
+
+.ql-editor p {
+  margin: 0.75rem 0;
+  color: #374151;
+}
+
+.ql-editor ul, .ql-editor ol {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+.ql-editor li {
+  margin: 0.375rem 0;
+  color: #374151;
+}
+
+.ql-editor blockquote {
+  border-left: 4px solid #6366f1;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  font-style: italic;
+  color: #64748b;
+}
+
+.ql-editor pre {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.ql-editor code {
+  background: #f1f5f9;
+  color: #dc2626;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  font-size: 0.875em;
+}
+
+.ql-editor a {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+.ql-editor a:hover {
+  color: #4f46e5;
+}
+
+.ql-editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Toolbar Styling */
+.ql-toolbar {
+  border-top: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: none;
+  background: #f8fafc;
+}
+
+.ql-container {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid #e5e7eb !important;
+}
+
+.ql-editor.ql-blank::before {
+  font-style: italic;
+  color: #9ca3af;
+}
+
+/* Dark mode support */
+.dark .ql-editor {
+  color: #e5e7eb;
+}
+
+.dark .ql-toolbar {
+  border-color: #374151;
+  background: #1f2937;
+}
+
+.dark .ql-container {
+  border-color: #374151 !important;
+  background: #111827;
+}
+
+.dark .ql-editor h1 {
+  color: #f9fafb;
+}
+
+.dark .ql-editor h2 {
+  color: #f3f4f6;
+}
+
+.dark .ql-editor h3 {
+  color: #e5e7eb;
+}
+
+.dark .ql-editor p, 
+.dark .ql-editor li {
+  color: #d1d5db;
+}
+
+.dark .ql-editor blockquote {
+  background: #374151;
+  border-left-color: #6366f1;
+  color: #9ca3af;
+}
+
+.dark .ql-editor pre {
+  background: #000;
+  color: #f9fafb;
+}
+
+.dark .ql-editor code {
+  background: #374151;
+  color: #fca5a5;
+}
+
+/* Animation for editor transitions */
+.ql-toolbar,
+.ql-container {
+  transition: all 0.2s ease-in-out;
+}
+
+.ql-toolbar:hover,
+.ql-container:hover {
+  border-color: #6366f1;
+}
+
+/* Focus states */
+.ql-toolbar.ql-snow:focus-within {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.ql-container.ql-snow:focus-within {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+/* Custom scrollbar for editor */
+.ql-editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ql-editor::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.ql-editor::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Loading states */
+.ql-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Preview styling */
+.article-preview h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.article-preview .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.article-preview .meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.article-preview .rich-content {
+  line-height: 1.7;
+  color: #374151;
+}
+
+.article-preview .rich-content h1,
+.article-preview .rich-content h2,
+.article-preview .rich-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-preview .rich-content p {
+  margin-bottom: 1rem;
+}
+
+.article-preview .rich-content ul,
+.article-preview .rich-content ol {
+  margin-bottom: 1rem;
+}
+
+.article-preview .rich-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-preview .rich-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: #f8fafc;
+  border-left: 4px solid #6366f1;
+  border-radius: 0.5rem;
+  font-style: italic;
+}
+
+.article-preview .rich-content pre {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+}
+
+.article-preview .rich-content code {
+  background: #f1f5f9;
+  color: #dc2626;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+}
+
+.article-preview .rich-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ql-editor {
+    min-height: 200px !important;
+    font-size: 16px;
+  }
+  
+  .article-preview h1 {
+    font-size: 2rem;
+  }
+  
+  .article-preview .meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

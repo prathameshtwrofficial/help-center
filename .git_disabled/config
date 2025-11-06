@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/brained-app/NEURATHON-BrainHints.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "upgrade-dependencies"]
+	vscode-merge-base = origin/main
+[remote "personal"]
+	url = https://github.com/prathameshtwrofficial/help-center.git
+	fetch = +refs/heads/*:refs/remotes/personal/*

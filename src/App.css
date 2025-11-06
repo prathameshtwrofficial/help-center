@@ -1,0 +1,15 @@
+/* App.css - Clean reset for proper video layout */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Remove conflicting styles that cause white screen */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
